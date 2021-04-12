@@ -71,7 +71,7 @@ print("CSV converted to Excel")
 print("Try send to slack")
 client = WebClient(token=slack_token)
 response = client.files_upload(
-    channels=slack_fadel_id,
+    channels=slack_receiver_id,
     title=excel_title,
     file=excel_locs,
     filetype='xlsx',
